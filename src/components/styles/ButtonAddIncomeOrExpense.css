@@ -1,0 +1,19 @@
+.buttonAddIncome {
+    background-color: var(--primary-bg);
+    color: var(--secondary-text);
+}
+
+.buttonAddIncome:hover {
+    background-color: var(--secondary-bg);
+    color: var(--primary-text);
+}
+
+.buttonAddExpense {
+    background-color: var(--quaternary-bg);
+    color: var(--primary-text);
+}
+
+.buttonAddExpense:hover {
+    background-color: var(--quinary-bg);
+    color: var(--primary-text);
+}

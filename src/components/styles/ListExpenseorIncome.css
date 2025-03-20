@@ -1,0 +1,28 @@
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    gap: 10px;
+    width: 95%;
+    padding: 10px; 
+    overflow-x: hidden; 
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+}
+
+span {
+    width: 35%;
+}
+
+.edit-button,
+.delete-button {
+    width: 15%;
+}
