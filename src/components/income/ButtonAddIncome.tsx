@@ -1,7 +1,7 @@
 import React from "react";
 import { useIncomeOrExpense } from "../../context/useIncomeOrExpense";
 import { useAddIncomeModal } from "../../hooks/useAddIncomeModal"; 
-import { ModalIncome } from "./ModalIncome";
+import { ModalAddIncome } from "./ModalAddIncome";
 import "../styles/ButtonAddIncomeOrExpense.css"
 
 const ButtonAddIncome = () => {
@@ -39,7 +39,7 @@ const ButtonAddIncome = () => {
             </button>
 
             {isModalOpen && (
-                <ModalIncome 
+                <ModalAddIncome 
                     incomeText={incomeText}
                     handleChangeText={handleChangeText}
                     incomeAmount={incomeAmount}

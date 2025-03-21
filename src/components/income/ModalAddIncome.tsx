@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 
 
 type ModalIncomeProps = {
@@ -9,7 +10,7 @@ type ModalIncomeProps = {
     closeModal: () => void;
 }
 
-const ModalIncome = ({
+const ModalAddIncome = ({
     incomeText,
     handleChangeText,
     incomeAmount,
@@ -17,6 +18,12 @@ const ModalIncome = ({
     handleIncome, 
     closeModal,
 }: ModalIncomeProps) => {
+    const navigate = useNavigate();
+
+    const goToIncome = () => {
+        navigate('/income');
+    }
+
     return (
         <div className="modal">
             <div className="modal-content">
@@ -37,7 +44,10 @@ const ModalIncome = ({
                 />
 
                 <div className="buttons-modal">
-                    <button className="add-button" onClick={handleIncome}>
+                    <button 
+                        className="add-button" 
+                        onClick={() => {handleIncome(); goToIncome()}}
+                    >
                         Agregar
                     </button>
 
@@ -50,4 +60,4 @@ const ModalIncome = ({
     );
 }
 
-export { ModalIncome };
+export { ModalAddIncome };

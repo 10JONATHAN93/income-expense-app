@@ -1,19 +1,37 @@
-.buttonAddIncome {
+.buttonAddIncome,
+.edit-button {
     background-color: var(--primary-bg);
     color: var(--secondary-text);
 }
 
-.buttonAddIncome:hover {
+.buttonAddIncome:hover,
+.edit-button:hover {
     background-color: var(--secondary-bg);
     color: var(--primary-text);
 }
 
-.buttonAddExpense {
+.buttonAddExpense,
+.delete-button {
     background-color: var(--quaternary-bg);
     color: var(--primary-text);
 }
 
-.buttonAddExpense:hover {
+.buttonAddExpense:hover,
+.delete-button:hover {
     background-color: var(--quinary-bg);
     color: var(--primary-text);
+}
+
+.buttonIncomeList,
+.buttonExpenseList,
+.button-goToHome {
+    background-color: var(--tertiary-bg);
+    margin-bottom: 20px;
+}
+
+.buttonIncomeList:hover,
+.buttonExpenseList:hover,
+.button-goToHome:hover {
+    background-color: var(--senary-bg);
+    margin-bottom: 20px;
 }

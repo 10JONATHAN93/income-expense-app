@@ -1,0 +1,15 @@
+.total-container {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.span-total {
+    font-size: 25px;
+}
+
+.financialStatus-title, 
+.financialStatus-total {
+    font-size: 30px;
+    margin: auto;
+}
+

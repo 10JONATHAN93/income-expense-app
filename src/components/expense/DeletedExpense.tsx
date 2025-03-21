@@ -6,7 +6,7 @@ type DeletedExpenseProps = {
 
 const DeleteExpense = ({ onDelete }: DeletedExpenseProps) => {
     return (
-        <button className="delete-button" onClick={onDelete}>❌</button>
+        <button className="delete-button" onClick={onDelete}>X</button>
     )
 }
 

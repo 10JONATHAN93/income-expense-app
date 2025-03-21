@@ -1,14 +1,15 @@
 :root {
 
-  --primary-text: #ffffff; /* Blanco para que resalte sobre fondos oscuros */
-  --secondary-text: #252524; /* Un amarillo suave que combina con el fondo */
-  --tertiary-text: #7a4d94; /* Un tono morado sutil para el texto terciario */
+  --primary-text: #ffffff;
+  --secondary-text: #252524; 
+  --tertiary-text: #7a4d94;
   
-  --primary-bg: #00f529; /* Púrpura, combinando con el fondo principal */
-  --secondary-bg: #11a32a; /* Rosa oscuro para un contraste atractivo */
-  --tertiary-bg: #5a5a5a; /* Naranja retro, para dar un toque vibrante */
-  --quaternary-bg: #f70505; /* Naranja retro, para dar un toque vibrante */
-  --quinary-bg: #a10808; /* Naranja retro, para dar un toque vibrante */
+  --primary-bg: #00f529; 
+  --secondary-bg: #11a32a; 
+  --tertiary-bg: #5a5a5a;
+  --quaternary-bg: #f70505;
+  --quinary-bg: #a10808;
+  --senary-bg: #0c0c0c;
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

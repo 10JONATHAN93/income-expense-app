@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 
 
 type ModalAddExpenseProps = {
@@ -17,6 +18,12 @@ const ModalAddExpense = ({
     handleExpense, 
     closeModal,
 }: ModalAddExpenseProps) => {
+
+    const navigate = useNavigate();
+    const goToExpense = () => {
+        navigate('/expense');
+    }
+
     return (
         <div className="modal">
             <div className="modal-content">
@@ -37,7 +44,9 @@ const ModalAddExpense = ({
                 />
 
                 <div className="buttons-modal">
-                    <button className="add-button" onClick={handleExpense}>
+                    <button 
+                        className="add-button" 
+                        onClick={() => {handleExpense(); goToExpense()}}>
                         Agregar
                     </button>
         

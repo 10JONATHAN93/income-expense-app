@@ -22,7 +22,6 @@
     border:1px solid #ffffffe3;
     border-radius: 10px;
     width: 500px;
-    height: 400px;
     box-shadow: 0px 5px 20px #ffffffb4;
 }
 
@@ -61,4 +60,27 @@
 .cancel-button:hover {
     background-color: var(--quinary-bg);
     color: var(--primary-text);
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        width: 100%;
+        height: auto;
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .buttons-modal {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin: 0;
+    }
+
+    .add-button, .cancel-button {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
+    }
 }

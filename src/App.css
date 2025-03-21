@@ -1,47 +1,67 @@
 #root {
   display: flex;
   flex-direction: column;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
+/* Estilos generales */
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  margin-bottom: 80px;
+  font-size: 3em;
+  margin-bottom: 40px;
+  color: #ffffff;
 }
 
+/* Contenedor principal */
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Sección del balance */
+.financialStatus-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Contenedor de ingresos y gastos */
+.income-expense-wrapper {
+  display: flex;
+  width: 100%;
   justify-content: space-between;
   gap: 20px;
 }
 
+/* Estilos comunes para ingresos y gastos */
 .income-container,
 .expense-container {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  border:1px solid rgb(255, 255, 255);
-  border-radius: 10px;
+  flex: 1;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
 }
 
-
+/* Formularios */
 .incomeForm-container,
 .expenseForm-container {
   width: 100%;
 }
 
-
-
-
-@media (max-width: 700px) {
-  .container {
+/* Responsividad */
+@media (max-width: 768px) {
+  .income-expense-wrapper {
     flex-direction: column;
-    gap: 40px;
-    width: auto;
+    align-items: center;
+    gap: 30px;
   }
 }
