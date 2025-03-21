@@ -1,0 +1,36 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencias de Node
+node_modules/
+
+# Directorios de build y compilación
+dist/
+dist-ssr/
+
+# Archivos locales de entorno
+*.local
+.env
+.env.local
+.env.*.local
+
+# Archivos temporales generados por Vite
+.vite/
+
+# Archivos de configuración de editores
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Archivos específicos de sistemas operativos
+.DS_Store
+Thumbs.db
+
+# Archivos generados por TypeScript
+*.tsbuildinfo
